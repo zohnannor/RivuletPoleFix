@@ -1,4 +1,4 @@
-# Rivulet Pole Fix
+# Rivulet Fast Pole Climb Fix
 
 Fixes Fast Pole Climbing for Rivulet.
 

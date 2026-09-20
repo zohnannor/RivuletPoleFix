@@ -42,10 +42,10 @@
     </ItemGroup>
 
     <Target Name="PostBuild" AfterTargets="PostBuildEvent" Condition="Exists('$(RainWorldDir)')">
-        <MakeDir Directories="$(RainWorldDir)/RainWorld_Data/StreamingAssets/mods/RivuletPoleFix/plugins" />
-        <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(RainWorldDir)/RainWorld_Data/StreamingAssets/mods/RivuletPoleFix/plugins" />
-        <Copy SourceFiles="modinfo.json" DestinationFolder="$(RainWorldDir)/RainWorld_Data/StreamingAssets/mods/RivuletPoleFix" />
-        <Copy SourceFiles="thumbnail.png" DestinationFolder="$(RainWorldDir)/RainWorld_Data/StreamingAssets/mods/RivuletPoleFix" />
+        <MakeDir Directories="$(RainWorldDir)/RainWorld_Data/StreamingAssets/mods/RivuletFPCFix/plugins" />
+        <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(RainWorldDir)/RainWorld_Data/StreamingAssets/mods/RivuletFPCFix/plugins" />
+        <Copy SourceFiles="modinfo.json" DestinationFolder="$(RainWorldDir)/RainWorld_Data/StreamingAssets/mods/RivuletFPCFix" />
+        <Copy SourceFiles="thumbnail.png" DestinationFolder="$(RainWorldDir)/RainWorld_Data/StreamingAssets/mods/RivuletFPCFix" />
     </Target>
 
 </Project>

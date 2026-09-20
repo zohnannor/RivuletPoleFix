@@ -1,10 +1,10 @@
 {
-    "id": "zohnannor.rivuletpolefix",
-    "name": "Rivulet Pole Fix",
-    "version": "1.0.0",
+    "id": "zohnannor.rivuletfpcfix",
+    "name": "Rivulet Fast Pole Climb Fix",
+    "version": "1.0.1",
     "target_game_version": "v1.11.8",
     "authors": "zohnannor",
-    "description": "Fixes Fast Pole Climbing for Rivulet.\n\nFast Pole Climbing is a movement tech that combines pole boosting with the end lag cancellation by regrabbing (https://rwtechwiki.github.io/Movement/poleregrablagcancel#gifs). Rivulet's speed is too fast when jumping off the poles, so they allmost always won't be able to regrab the pole.\n\nThis mod fixes that by extending the radius the game is using to snap you onto the pole, only for Rivulet and only when jumping and regrabbing a pole. Also works with the Rivulet's Speed expedition perk.\n\nYou can toggle the functionality in the Remix menu so that you don't need to restart your game.\n\nhttps://github.com/zohnannor/RivuletPoleFix",
+    "description": "Fixes Fast Pole Climbing for Rivulet.\n\nFast Pole Climbing is a movement tech that combines pole boosting with the end lag cancellation by regrabbing (https://rwtechwiki.github.io/Movement/poleregrablagcancel#gifs). Rivulet's speed is too fast when jumping off the poles, so they allmost always won't be able to regrab the pole.\n\nThis mod fixes that by extending the radius the game is using to snap you onto the pole, only for Rivulet and only when jumping and regrabbing a pole. Also works with the Rivulet's Speed expedition perk.\n\nYou can toggle the functionality in the Remix menu so that you don't need to restart your game.\n\nhttps://github.com/zohnannor/RivuletFPCFix",
     "requirements": [
         "moreslugcats"
     ],

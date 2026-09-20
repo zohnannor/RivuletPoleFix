@@ -10,16 +10,16 @@ using static Player;
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
 #pragma warning restore CS0618
 
-namespace RivuletPoleFix;
+namespace RivuletFPCFix;
 
 [BepInPlugin(PLUGIN_GUID, PLUGIN_NAME, PLUGIN_VERSION)]
-public class RivuletPoleFixMain : BaseUnityPlugin {
-    public const string PLUGIN_GUID = "zohnannor.rivuletpolefix";
-    public const string PLUGIN_NAME = "Rivulet Pole Fix";
-    public const string PLUGIN_VERSION = "1.0.0";
+public class RivuletFPCFixMain : BaseUnityPlugin {
+    public const string PLUGIN_GUID = "zohnannor.rivuletfpcfix";
+    public const string PLUGIN_NAME = "Rivulet Fast Pole Climb Fix";
+    public const string PLUGIN_VERSION = "1.0.1";
 
     private bool initDone = false;
-    public static RivuletPoleFixOptions Options;
+    public static RivuletFPCFixOptions Options;
 
     private static readonly ConditionalWeakTable<Player, object> Sticky = new();
     private static readonly object StickyMarker = new();
@@ -40,7 +40,7 @@ public class RivuletPoleFixMain : BaseUnityPlugin {
             return;
         }
 
-        Options = new RivuletPoleFixOptions();
+        Options = new RivuletFPCFixOptions();
         MachineConnector.SetRegisteredOI(PLUGIN_GUID, Options);
 
         On.Player.Jump += Player_Jump;
@@ -106,7 +106,7 @@ public class RivuletPoleFixMain : BaseUnityPlugin {
 
 }
 
-public class RivuletPoleFixOptions : OptionInterface {
+public class RivuletFPCFixOptions : OptionInterface {
     public readonly Configurable<bool> Enabled;
 
     private OpTab mainTab;
@@ -114,7 +114,7 @@ public class RivuletPoleFixOptions : OptionInterface {
 
     private const string desc = "Toggle the mod's functionality without restarting the game.";
 
-    public RivuletPoleFixOptions() {
+    public RivuletFPCFixOptions() {
         Enabled = config.Bind("enabled", true);
     }
 
