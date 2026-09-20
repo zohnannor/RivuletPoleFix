@@ -72,14 +72,16 @@ public class RivuletFPCFixMain : BaseUnityPlugin {
     ) {
         orig(self);
         // don't do anything if we're not rivulet, if we're already climbing,
-        // standing on the ground, haven't been on the pole or if the mod is
-        // disabled
+        // standing on the ground, still holding a direction (that's a
+        // deliberate jump-off), haven't been on the pole or if the mod is
+        // disabled 
         if (
             !self.isRivulet
                 || self.animation == AnimationIndex.ClimbOnBeam
                 || self.bodyChunks[1].ContactPoint.y < 0
-                || !Options.Enabled.Value
+                || self.input[0].x != 0
                 || !Sticky.TryGetValue(self, out _)
+                || !Options.Enabled.Value
         ) {
             return;
         }
